@@ -1,1 +1,16 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_Ardrone3PilotingStateGpsLocationChanged.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          LATITUDE-VAL
+          LATITUDE
+          LONGITUDE-VAL
+          LONGITUDE
+          ALTITUDE-VAL
+          ALTITUDE
+          LATITUDE_ACCURACY-VAL
+          LATITUDE_ACCURACY
+          LONGITUDE_ACCURACY-VAL
+          LONGITUDE_ACCURACY
+          ALTITUDE_ACCURACY-VAL
+          ALTITUDE_ACCURACY
+))

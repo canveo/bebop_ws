@@ -68,7 +68,7 @@ set(control_manual_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(control_manual_SOURCE_PREFIX /home/carlos/bebop_ws/src/control_manual)
-  set(control_manual_DEVEL_PREFIX /home/carlos/bebop_ws/devel/.private/control_manual)
+  set(control_manual_DEVEL_PREFIX /home/carlos/bebop_ws/devel)
   set(control_manual_INSTALL_PREFIX "")
   set(control_manual_PREFIX ${control_manual_DEVEL_PREFIX})
 else()

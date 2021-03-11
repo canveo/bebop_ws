@@ -1,1 +1,4 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/bebop_msgs/cmake/bebop_msgs-msg-paths.cmake
+# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
+
+set(bebop_msgs_MSG_INCLUDE_DIRS "/home/carlos/bebop_ws/src/bebop_autonomy/bebop_msgs/msg")
+set(bebop_msgs_MSG_DEPENDENCIES std_msgs)

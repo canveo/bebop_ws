@@ -1,1 +1,6 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_Ardrone3PilotingStateAltitudeChanged.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          ALTITUDE-VAL
+          ALTITUDE
+))

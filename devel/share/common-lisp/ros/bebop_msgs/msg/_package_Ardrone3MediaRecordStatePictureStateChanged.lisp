@@ -1,1 +1,8 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_Ardrone3MediaRecordStatePictureStateChanged.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          STATE-VAL
+          STATE
+          MASS_STORAGE_ID-VAL
+          MASS_STORAGE_ID
+))

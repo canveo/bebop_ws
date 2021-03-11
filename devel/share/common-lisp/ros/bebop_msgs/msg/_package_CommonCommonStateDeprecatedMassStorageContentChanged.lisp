@@ -1,1 +1,14 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_CommonCommonStateDeprecatedMassStorageContentChanged.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          MASS_STORAGE_ID-VAL
+          MASS_STORAGE_ID
+          NBPHOTOS-VAL
+          NBPHOTOS
+          NBVIDEOS-VAL
+          NBVIDEOS
+          NBPUDS-VAL
+          NBPUDS
+          NBCRASHLOGS-VAL
+          NBCRASHLOGS
+))

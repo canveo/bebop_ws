@@ -68,7 +68,7 @@ set(px_sensor_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(px_sensor_SOURCE_PREFIX /home/carlos/bebop_ws/src/px_sensor)
-  set(px_sensor_DEVEL_PREFIX /home/carlos/bebop_ws/devel/.private/px_sensor)
+  set(px_sensor_DEVEL_PREFIX /home/carlos/bebop_ws/devel)
   set(px_sensor_INSTALL_PREFIX "")
   set(px_sensor_PREFIX ${px_sensor_DEVEL_PREFIX})
 else()

@@ -1,1 +1,8 @@
-/home/carlos/bebop_ws/devel/.private/px_sensor/lib/pkgconfig/px_sensor.pc
+prefix=/home/carlos/bebop_ws/devel
+
+Name: px_sensor
+Description: Description of px_sensor
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

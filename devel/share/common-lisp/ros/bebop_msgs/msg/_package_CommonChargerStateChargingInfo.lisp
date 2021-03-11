@@ -1,1 +1,12 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_CommonChargerStateChargingInfo.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          PHASE-VAL
+          PHASE
+          RATE-VAL
+          RATE
+          INTENSITY-VAL
+          INTENSITY
+          FULLCHARGINGTIME-VAL
+          FULLCHARGINGTIME
+))

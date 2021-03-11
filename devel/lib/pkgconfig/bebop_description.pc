@@ -1,1 +1,8 @@
-/home/carlos/bebop_ws/devel/.private/bebop_description/lib/pkgconfig/bebop_description.pc
+prefix=/home/carlos/bebop_ws/devel
+
+Name: bebop_description
+Description: Description of bebop_description
+Version: 0.7.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

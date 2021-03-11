@@ -1,1 +1,10 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_CommonCommonStateMassStorageInfoRemainingListChanged.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          FREE_SPACE-VAL
+          FREE_SPACE
+          REC_TIME-VAL
+          REC_TIME
+          PHOTO_REMAINING-VAL
+          PHOTO_REMAINING
+))

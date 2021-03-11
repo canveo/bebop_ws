@@ -1,1 +1,8 @@
-/home/carlos/bebop_ws/devel/.private/bebop_tools/lib/pkgconfig/bebop_tools.pc
+prefix=/home/carlos/bebop_ws/devel
+
+Name: bebop_tools
+Description: Description of bebop_tools
+Version: 0.7.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: bebop_msgs

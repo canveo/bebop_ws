@@ -1,1 +1,12 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_CommonCalibrationStateMagnetoCalibrationStateChanged.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          XAXISCALIBRATION-VAL
+          XAXISCALIBRATION
+          YAXISCALIBRATION-VAL
+          YAXISCALIBRATION
+          ZAXISCALIBRATION-VAL
+          ZAXISCALIBRATION
+          CALIBRATIONFAILED-VAL
+          CALIBRATIONFAILED
+))

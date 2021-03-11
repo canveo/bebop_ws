@@ -1,1 +1,8 @@
-/home/carlos/bebop_ws/devel/.private/bebop_msgs/share/common-lisp/ros/bebop_msgs/msg/_package_Ardrone3CameraStateVelocityRange.lisp
+(cl:in-package bebop_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          MAX_TILT-VAL
+          MAX_TILT
+          MAX_PAN-VAL
+          MAX_PAN
+))
