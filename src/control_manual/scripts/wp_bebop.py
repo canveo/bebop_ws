@@ -12,17 +12,15 @@ from std_msgs.msg import Empty
 from geometry_msgs.msg import Twist, TransformStamped, Vector3
 from bebop_msgs.msg import Ardrone3PilotingStateFlyingStateChanged
 from nav_msgs.msg import Odometry 
+import numpy as np
+
+import waypoints as wp
 
 UNIQUE_ID = uuid4()
-# UNIQUE_ID = "DATOS"
 HOVER = False
-WAYPOINTS = [
-    (0, 0, 1),
-    (1.5, 0, 1),
-    (1.5, 1.5, 1),
-    (0, 1.5, 1),
-    (0, 0 ,1)
-]
+
+WAYPOINTS = wp.WAYPOINTS
+
 
 # x_plot = {
 #     'error': [],
@@ -123,7 +121,7 @@ class Bebop_functions():
         self.controlY = PID(0.6, 0.1, 1.5)
         self.controlZ = PID(0.12, 0.01, 0.25)
 
-        self.vel_lim = 0.5  # 2.0
+        self.vel_lim = 0.3  # 2.0
         self.finished = False
         self.waypoint = WAYPOINTS.pop(0)
         # TransformStamped message update rate limited to 5 Hz, which limits to 5 Hz the subscribing rate.
@@ -132,8 +130,8 @@ class Bebop_functions():
         # Escritura de los valores producidos (odometria, PID)
         filename = 'datos_' + strftime('%d_%b_%Y_%H_%M_%S') + '.csv'
         self.logfile = open(filename, 'w')
-        self.write_and_flush('Pose X, Pose Y, Pose Z,')
-        self.write_and_flush('error X, error Y, error Z, tz\n')
+        self.write_and_flush('PoseX, PoseY, PoseZ,')
+        self.write_and_flush('errorX, errorY, errorZ, tiempo\n')
 
     def takeoff(self):  # Take off command function
         while self.state != 2 and not rospy.is_shutdown():
@@ -163,6 +161,7 @@ class Bebop_functions():
             delta_x = self.waypoint[0] - self.bebopose.position.x  # position error
             delta_y = self.waypoint[1] - self.bebopose.position.y
             delta_z = self.waypoint[2] - self.bebopose.position.z
+            # delta_yaw = self.waypoint[3] -self.yaw                 # nuevo
 
             rho = sqrt(delta_x*delta_x + delta_y*delta_y +
                        delta_z*delta_z)  # error to the goal
@@ -170,6 +169,8 @@ class Bebop_functions():
                 math.sin(self.yaw) * delta_y
             error_y = -math.sin(self.yaw) * delta_x + \
                 math.cos(self.yaw) * delta_y
+            error_x = delta_x
+            # error_y = delta_y
 
 
             # robot's body frame convertion for x and y linear velocities
@@ -179,6 +180,10 @@ class Bebop_functions():
                 self.controlY.calculate_pid(error_y), self.vel_lim), -self.vel_lim)
             twist.linear.z = max(min(
                 self.controlZ.calculate_pid(delta_z), self.vel_lim), -self.vel_lim)
+
+            # twist.angular.z = max(min(
+            #     self.controlZ.calculate_pid(delta_yaw), self.vel_lim), -self.vel_lim) # nuevo
+            
 
             # rospy.loginfo("rho: {:.2f}, yaw: {:.2f},pos = {}, {}, {}, twist: {}".format(rho, self.yaw,
             #                                                                                self.bebopose.position.x, self.bebopose.position.y, self.bebopose.position.z, twist.linear))
@@ -223,7 +228,7 @@ class Bebop_functions():
         self.state = message.state
 
     def safety_check(self):
-        if self.bebopose.position.x > 4.0 or self.bebopose.position.x > 4.0 or self.bebopose.position.z > 2.0:
+        if self.bebopose.position.x > 7.0 or self.bebopose.position.y > 7.0 or self.bebopose.position.z > 2.0:
             print "EMERGENCY LANDING"
             self.finished = True
 

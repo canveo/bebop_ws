@@ -296,43 +296,17 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList
+_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged/fast
+_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateControllerLibARCommandsVersion
@@ -361,32 +335,6 @@ _bebop_msgs_generate_messages_check_deps_CommonChargerStateCurrentChargeStateCha
 .PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateCurrentChargeStateChanged/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged/fast
-
-#=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonHeadlightsStateintensityChanged
 
 # Build rule for target.
@@ -398,45 +346,6 @@ _bebop_msgs_generate_messages_check_deps_CommonHeadlightsStateintensityChanged: 
 _bebop_msgs_generate_messages_check_deps_CommonHeadlightsStateintensityChanged/fast:
 	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonHeadlightsStateintensityChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonHeadlightsStateintensityChanged.dir/build
 .PHONY : _bebop_msgs_generate_messages_check_deps_CommonHeadlightsStateintensityChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown/fast
-
-#=============================================================================
-# Target rules for targets named bebop_msgs_generate_messages_eus
-
-# Build rule for target.
-bebop_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_eus
-.PHONY : bebop_msgs_generate_messages_eus
-
-# fast build rule for target.
-bebop_msgs_generate_messages_eus/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_eus.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_eus.dir/build
-.PHONY : bebop_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3GPSStateNumberOfSatelliteChanged
@@ -452,6 +361,19 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3GPSStateNumberOfSatelliteChange
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3GPSStateNumberOfSatelliteChanged/fast
 
 #=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged/fast
+
+#=============================================================================
 # Target rules for targets named bebop_msgs_gencpp
 
 # Build rule for target.
@@ -463,6 +385,71 @@ bebop_msgs_gencpp: cmake_check_build_system
 bebop_msgs_gencpp/fast:
 	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_gencpp.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_gencpp.dir/build
 .PHONY : bebop_msgs_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo/fast
+
+#=============================================================================
+# Target rules for targets named bebop_msgs_generate_messages_nodejs
+
+# Build rule for target.
+bebop_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_nodejs
+.PHONY : bebop_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+bebop_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_nodejs.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_nodejs.dir/build
+.PHONY : bebop_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCalibrationStatePitotCalibrationStateChanged
@@ -491,43 +478,17 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3MediaStreamingStateVideoEnableC
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaStreamingStateVideoEnableChanged/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion
+_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2/fast
+_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatePositionChanged
@@ -541,19 +502,6 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatePositionChanged: c
 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatePositionChanged/fast:
 	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatePositionChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatePositionChanged.dir/build
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatePositionChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChangedV2
@@ -660,17 +608,56 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3PROStateFeatures/fast:
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PROStateFeatures/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged/fast
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged/fast
+
+#=============================================================================
+# Target rules for targets named bebop_msgs_generate_messages_py
+
+# Build rule for target.
+bebop_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_py
+.PHONY : bebop_msgs_generate_messages_py
+
+# fast build rule for target.
+bebop_msgs_generate_messages_py/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_py.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_py.dir/build
+.PHONY : bebop_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateSkyControllerLibARCommandsVersion
@@ -738,6 +725,32 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged/fast
+
+#=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonAudioStateAudioStreamingRunning
 
 # Build rule for target.
@@ -777,19 +790,6 @@ _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoRemaini
 .PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoRemainingListChanged/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged/fast
-
-#=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateProductModel
 
 # Build rule for target.
@@ -801,19 +801,6 @@ _bebop_msgs_generate_messages_check_deps_CommonCommonStateProductModel: cmake_ch
 _bebop_msgs_generate_messages_check_deps_CommonCommonStateProductModel/fast:
 	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateProductModel.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateProductModel.dir/build
 .PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateProductModel/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAlertStateChanged
@@ -829,95 +816,43 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAlertStateChanged/
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAlertStateChanged/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged
+_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged/fast
+_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged/fast
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged
+_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged/fast
+_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStatePictureStateChanged
@@ -933,17 +868,69 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStatePictureStateCha
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStatePictureStateChanged/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState/fast
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentDateChanged
@@ -959,108 +946,17 @@ _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentDateChanged/fas
 .PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentDateChanged/fast
 
 #=============================================================================
-# Target rules for targets named bebop_msgs_generate_messages_nodejs
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState
 
 # Build rule for target.
-bebop_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_nodejs
-.PHONY : bebop_msgs_generate_messages_nodejs
+_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState
 
 # fast build rule for target.
-bebop_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_nodejs.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_nodejs.dir/build
-.PHONY : bebop_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged/fast
-
-#=============================================================================
-# Target rules for targets named bebop_msgs_generate_messages_py
-
-# Build rule for target.
-bebop_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_py
-.PHONY : bebop_msgs_generate_messages_py
-
-# fast build rule for target.
-bebop_msgs_generate_messages_py/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_py.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_py.dir/build
-.PHONY : bebop_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named bebop_msgs_generate_messages_lisp
-
-# Build rule for target.
-bebop_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_lisp
-.PHONY : bebop_msgs_generate_messages_lisp
-
-# fast build rule for target.
-bebop_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_lisp.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_lisp.dir/build
-.PHONY : bebop_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged/fast
+_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
@@ -1115,56 +1011,30 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrienta
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientation/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_nodejs
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown
 
 # Build rule for target.
-std_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
-.PHONY : std_msgs_generate_messages_nodejs
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown
 
 # fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2
+# Target rules for targets named bebop_msgs_generate_messages_eus
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2
+bebop_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_eus
+.PHONY : bebop_msgs_generate_messages_eus
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged/fast
+bebop_msgs_generate_messages_eus/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_eus.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_eus.dir/build
+.PHONY : bebop_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatRegulationChanged
@@ -1232,6 +1102,19 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateSpeedChanged/fast:
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateSpeedChanged/fast
 
 #=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged/fast
+
+#=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3AntiflickeringStateelectricFrequencyChanged
 
 # Build rule for target.
@@ -1245,17 +1128,95 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3AntiflickeringStateelectricFreq
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3AntiflickeringStateelectricFrequencyChanged/fast
 
 #=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2
 
 # Build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged
+_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2
 
 # fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged/fast
+_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged/fast
+
+#=============================================================================
+# Target rules for targets named bebop_msgs_generate_messages_lisp
+
+# Build rule for target.
+bebop_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bebop_msgs_generate_messages_lisp
+.PHONY : bebop_msgs_generate_messages_lisp
+
+# fast build rule for target.
+bebop_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_lisp.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_lisp.dir/build
+.PHONY : bebop_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateComponentStateListChanged
@@ -1295,19 +1256,6 @@ _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigChan
 _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigChanged/fast:
 	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigChanged.dir/build
 .PHONY : _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigChanged/fast
-
-#=============================================================================
-# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState
-
-# Build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState
-
-# fast build rule for target.
-_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState/fast:
-	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState.dir/build
-.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateGpsLocationChanged
@@ -1362,6 +1310,45 @@ _bebop_msgs_generate_messages_check_deps_Ardrone3GPSStateHomeTypeChosenChanged/f
 .PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3GPSStateHomeTypeChosenChanged/fast
 
 #=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp/fast
+
+#=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateFlatTrimChanged
 
 # Build rule for target.
@@ -1386,6 +1373,19 @@ bebop_msgs_generate_messages_cpp: cmake_check_build_system
 bebop_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_cpp.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/bebop_msgs_generate_messages_cpp.dir/build
 .PHONY : bebop_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged
+
+# Build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged
+
+# fast build rule for target.
+_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged/fast:
+	$(MAKE) -f bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged.dir/build.make bebop_autonomy/bebop_msgs/CMakeFiles/_bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged.dir/build
+.PHONY : _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged/fast
 
 #=============================================================================
 # Target rules for targets named _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContent
@@ -2346,26 +2346,22 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateControllerLibARCommandsVersion"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonChargerStateCurrentChargeStateChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonHeadlightsStateintensityChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown"
-	@echo "... bebop_msgs_generate_messages_eus"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3GPSStateNumberOfSatelliteChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoStateListChanged"
 	@echo "... bebop_msgs_gencpp"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo"
+	@echo "... bebop_msgs_generate_messages_nodejs"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStatePitotCalibrationStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaStreamingStateVideoEnableChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateDeviceLibARCommandsVersion"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatePositionChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChangedV2"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkPlayErrorStateChanged"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -2374,62 +2370,66 @@ help:
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaStreamingStateVideoStreamModeChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMissionItemExecuted"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PROStateFeatures"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonMavlinkStateMavlinkFilePlayingStateChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentTimeChanged"
+	@echo "... bebop_msgs_generate_messages_py"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonARLibsVersionsStateSkyControllerLibARCommandsVersion"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3AntiflickeringStatemodeChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonChargerStateLastChargeRateChanged"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonAudioStateAudioStreamingRunning"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAirSpeedChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageInfoRemainingListChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateProductModel"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAlertStateChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAttitudeChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiScanListChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigModificationEnabled"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateWifiSignalChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonChargerStateMaxChargeRateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStatePictureStateChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAutoTakeOffModeChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateCurrentDateChanged"
-	@echo "... bebop_msgs_generate_messages_nodejs"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonChargerStateChargingInfo"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiScanChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStateChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateAltitudeChanged"
-	@echo "... bebop_msgs_generate_messages_py"
-	@echo "... bebop_msgs_generate_messages_lisp"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationRequiredState"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateNavigateHomeStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientation"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientation"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateOrientationV2"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateDeprecatedMassStorageContentChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoStateChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateCountryListKnown"
+	@echo "... bebop_msgs_generate_messages_eus"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonOverHeatStateOverHeatRegulationChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateSensorsStatesListChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateFlyingStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStateVelocityRange"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateSpeedChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationStartedChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3AntiflickeringStateelectricFrequencyChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3CameraStatedefaultCameraOrientationV2"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonRunStateRunIdChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContentForCurrentRun"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonAnimationsStateList"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateWifiAuthChannelListChanged"
+	@echo "... bebop_msgs_generate_messages_lisp"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3NetworkStateAllWifiAuthChannelChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateComponentStateListChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateLandingStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateAccessoryConfigChanged"
-	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3MediaRecordStateVideoResolutionState"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateGpsLocationChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateAvailabilityStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCalibrationStateMagnetoCalibrationAxisToCalibrateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3GPSStateHomeTypeChosenChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateAllStatesChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStatemoveToChanged"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateVideoRecordingTimestamp"
 	@echo "... _bebop_msgs_generate_messages_check_deps_Ardrone3PilotingStateFlatTrimChanged"
 	@echo "... bebop_msgs_generate_messages_cpp"
+	@echo "... _bebop_msgs_generate_messages_check_deps_CommonFlightPlanStateLockStateChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageContent"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonAccessoryStateSupportedAccessoriesListChanged"
 	@echo "... _bebop_msgs_generate_messages_check_deps_CommonCommonStateMassStorageStateListChanged"
