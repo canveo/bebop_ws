@@ -21,25 +21,25 @@ class RealFlight:
 
     def __init__(self):
         
-        self.pose_sub = rospy.Subscriber(
-            "bebop/optitrack/pose",   
-            PoseStamped,
-            self.pose_cb)
+        # self.pose_sub = rospy.Subscriber(
+        #     "bebop/optitrack/pose",   
+        #     PoseStamped,
+        #     self.pose_cb)
         
-        self.vel_sub = rospy.Subscriber(
-            "/bebop/optitrack/velocity", 
-            TwistStamped,
-            self.vel_cb)
+        # self.vel_sub = rospy.Subscriber(
+        #     "/bebop/optitrack/velocity", 
+        #     TwistStamped,
+        #     self.vel_cb)
 
-        self.pose_subscriber = rospy.Subscriber(
-            "/bebop/pos_ref",
-            Vector3,
-            self.setpoint_cb)
+        # self.pose_subscriber = rospy.Subscriber(
+        #     "/bebop/pos_ref",
+        #     Vector3,
+        #     self.setpoint_cb)
             
-        self.angle_subscriber = rospy.Subscriber(
-            "/bebop/angle_ref",
-            Vector3,
-            self.angle_cb)
+        # self.angle_subscriber = rospy.Subscriber(
+        #     "/bebop/angle_ref",
+        #     Vector3,
+        #     self.angle_cb)
 
         self.pose_pub = rospy.Publisher(
             "/bebop/pose_set",

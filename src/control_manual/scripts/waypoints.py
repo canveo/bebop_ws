@@ -1,3 +1,5 @@
+import numpy as np
+
 # cuadrado
 WAYPOINTS = [
     (0.0, 0.0, 1.0),

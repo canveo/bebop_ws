@@ -19,39 +19,24 @@ import waypoints as wp
 UNIQUE_ID = uuid4()
 HOVER = False
 
-# WAYPOINTS = wp.WAYPOINTS
+
 WAYPOINTS = [
-    (0, 0, 1),
-    (1.5, 0, 1),
-    (1.5, 1.5, 1),
-    (0, 1.5, 1),
-    (0, 0 ,1)
+             (0.0, 0.0, 1),
+             (4.0, 0.0, 1),
+             (4.0, 4.0, 1),
+             (0.0, 4.0, 1),
+             (0.0, 0.0 ,1)
 ]
 
-# WAYPOINTS = [
-#     (0.0, 0.0, 1, 0.0),
-#     (0.0, 0.0, 1, 1.5708),
-#     (1.5, 0.0, 1, 1.5708),
-#     (1.5, 0.0, 1, 3.1416),
-#     (1.5, 1.5, 1, 3.1416),
-#     (1.5, 1.5, 1, 4.7124),
-#     (0.0, 1.5, 1, 4.7124),
-#     (0.0, 1.5, 1, 6.2832),
-#     (0.0, 0.0 ,1, 6.2832)
-]
+WAYPOINTS_YAW = [
+                 0.0000, 
+                 1.5708, 
+                 3.1416, 
+                 -1.5708, #4.7124, 
+                 0.0000 #1.5708
+                 ]
 
-# x_plot = {
-#     'error': [],
-#     'time': []
-# }
-# y_plot = {
-#     'error': [],
-#     'time': []
-# }
-# z_plot = {
-#     'error': [],
-#     'time': []
-# }
+
 x_plot = []
 y_plot = []
 z_plot = []
@@ -135,7 +120,7 @@ class Bebop_functions():
         self.yaw = 0
         self.bebopose = Vector3()
 
-        self.controlX = PID(0.8, 0.001, 1.5)  # PID(0.8, 0.001, 1.5)
+        self.controlX = PID(0.25, 0, 1)  # PID(0.8, 0.001, 1.5)
         self.controlY = PID(0.8, 0.001, 1.5)
         self.controlZ = PID(0.12, 0.01, 0.25)  #PID(0.12, 0.01, 0.25)
 
@@ -143,7 +128,9 @@ class Bebop_functions():
 
         self.vel_lim = 0.3  # 2.0
         self.finished = False
+        self.finished_yaw = False
         self.waypoint = WAYPOINTS.pop(0)
+        self.waypoint_yaw = WAYPOINTS_YAW.pop(0)
         # TransformStamped message update rate limited to 5 Hz, which limits to 5 Hz the subscribing rate.
         self.rate = rospy.Rate(10)
 
@@ -173,26 +160,20 @@ class Bebop_functions():
         print("Landing completed succesfully!")
 
     def move(self):  # Move function with a P controller.
-
         twist = Twist()
-
-        while not rospy.is_shutdown() and not self.finished:
-
+        avanza = True
+        while avanza:
             delta_x = self.waypoint[0] - self.bebopose.position.x  # position error
             delta_y = self.waypoint[1] - self.bebopose.position.y
             delta_z = self.waypoint[2] - self.bebopose.position.z
-            delta_yaw = self.waypoint[3] -self.yaw                 # nuevo
+            
 
             rho = sqrt(delta_x*delta_x + delta_y*delta_y +
-                       delta_z*delta_z)  # error to the goal
+                        delta_z*delta_z)  # error to the goal
             error_x = math.cos(self.yaw) * delta_x + \
                 math.sin(self.yaw) * delta_y
             error_y = -math.sin(self.yaw) * delta_x + \
                 math.cos(self.yaw) * delta_y
-
-            # error_x = delta_x
-            # error_y = delta_y
-
 
             # robot's body frame convertion for x and y linear velocities
             twist.linear.x = max(min(
@@ -202,46 +183,81 @@ class Bebop_functions():
             twist.linear.z = max(min(
                 self.controlZ.calculate_pid(delta_z), self.vel_lim), -self.vel_lim)
 
-            twist.angular.z = max(min(
-                self.controlZ.calculate_pid(delta_yaw), self.vel_lim), -self.vel_lim) # nuevo
-            
+            rospy.loginfo("rho: {:.2f},err = {:.2f}, {:.2f}, {:.2f}".format(rho, error_x, error_y, delta_z))
 
-            # rospy.loginfo("rho: {:.2f}, yaw: {:.2f},pos = {}, {}, {}, twist: {}".format(rho, self.yaw,
-            #                                                                                self.bebopose.position.x, self.bebopose.position.y, self.bebopose.position.z, twist.linear))
-            # x_plot['error'].append(error_x)
-            # x_plot['time'].append(rospy.get_time())
-            # y_plot['error'].append(error_y)
-            # y_plot['time'].append(rospy.get_time())
-            # z_plot['error'].append(delta_z)
-            # z_plot['time'].append(rospy.get_time())
-            x_plot.append(error_x)
-            y_plot.append(error_y)
-            z_plot.append(delta_z)
-            time.append(rospy.get_time())
-            self.write_and_flush('{}, {}, {}, {}, {}, {}, {}'.format(
-                self.bebopose.position.x ,self.bebopose.position.y, self.bebopose.position.z, x_plot, y_plot, z_plot, time))
-            self.write_and_flush('\n')
-            # https://es.stackoverflow.com/questions/391936/cambiar-columnas-de-str-a-float-leyendo-desde-un-csv
-
-            # rospy.loginfo("rho: {:.2f},pos = {:.2f}, {:.2f}, {:.2f}".format(rho, self.bebopose.position.x, self.bebopose.position.y, self.bebopose.position.z))
-            rospy.loginfo("rho: {:.2f},err = {:.2f}, {:.2f}, {:.2f}, {:.2f}".format(rho, error_x, error_y, delta_z,delta_yaw))
-            # publishing of angular rates and linear velocities
             self.cmdvel_publisher.publish(twist)
             if rho < 0.1 and not HOVER:
                 if len(WAYPOINTS) != 0:
                     self.waypoint = WAYPOINTS.pop(0)
-                    print "new waypoint {}, {}, {}".format(
-                        self.waypoint[0], self.waypoint[1], self.waypoint[3])
+                    print "new rotate waypoint {}".format(self.waypoint_yaw)
                     rospy.sleep(3)
                 else:
-                    self.finished = True
-
+                    self.finished = True 
+                avanza = False
             self.rate.sleep()
-        self.cmdvel_publisher.publish(twist)
-        if self.finished:
+            
+    def rotate(self):
+        twist = Twist()
+        rota = True
+        while rota:
+            if self.yaw >= 3.10 and self.yaw <= 3.14:
+                delta_yaw = self.waypoint_yaw - (-3.1416)                 # nuevo
+            else:
+                delta_yaw = self.waypoint_yaw -self.yaw
+                
+            twist.angular.z = max(min(
+                    self.controlZ.calculate_pid(delta_yaw), self.vel_lim), -self.vel_lim) # nuevo
+
+            rospy.loginfo("yaw: {:.2f}, sp: {:.2f}, e: {:.2f}".format(self.yaw, self.waypoint_yaw, delta_yaw))
+            
+            self.cmdvel_publisher.publish(twist) 
+
+            if delta_yaw < 0.1 and not HOVER:
+                if len(WAYPOINTS_YAW) != 0:
+                    self.waypoint_yaw = WAYPOINTS_YAW.pop(0)
+                    print "new waypoint --> {}, {}".format(self.waypoint[0], self.waypoint[1])
+                    rospy.sleep(3)
+                else:
+                    self.finished_yaw = True
+                rota = False  
+            self.rate.sleep()         
+
+
+    # def goal_xyz(self):
+        
+    #             if len(WAYPOINTS) != 0:
+    #                 self.waypoint = WAYPOINTS.pop(0)
+    #                 print "new waypoint --> {}, {}".format(
+    #                     self.waypoint[0], self.waypoint[1])
+    #                 rospy.sleep(3)
+    #             else:
+    #                 self.finished = True
+
+    # def goal_yaw(self):
+    #     if len(WAYPOINTS_YAW) != 0:
+    #                 self.waypoint_yaw = WAYPOINTS_YAW.pop(0)
+    #                 print "new way rotation --> {}".format(
+    #                     self.waypoint[3])
+    #                 rospy.sleep(3)
+    #             else:
+    #                 self.finished_yaw = True
+                
+
+    def move_n_rotate(self):
+
+        twist = Twist()
+
+        while not rospy.is_shutdown() and not self.finished and not self.finished_yaw:
+            self.move()
+            self.rotate()
+            
+        
+        if self.finished and self.finished_yaw:
             self.cmdvel_publisher.publish(twist)
             self.land()
         print("Move is done!")
+
+       
 
     # /bebop/states... callback subscriber to read the state of the parrot
     def update_state(self, message):
@@ -249,9 +265,10 @@ class Bebop_functions():
         self.state = message.state
 
     def safety_check(self):
-        if self.bebopose.position.x > 4.0 or self.bebopose.position.y > 4.0 or self.bebopose.position.z > 2.0:
+        if self.bebopose.position.x > 8.0 or self.bebopose.position.y > 8.0 or self.bebopose.position.z > 3.0:
             print "EMERGENCY LANDING"
             self.finished = True
+            self.finished_yaw = True
 
     # /vicon/yolanda/yolanda callback subscriber to know the position and the yaw angle of the robot
     # vicon se elimina se cambia por la odometria del drone
@@ -278,7 +295,7 @@ if __name__ == '__main__':
         node = Bebop_functions()
         node.takeoff()
         rospy.sleep(2)
-        node.move()
+        node.move_n_rotate()
         node.land()  
     except rospy.ROSInterruptException as e:
         print "Exception: {0}".format(str(e))
