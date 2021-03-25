@@ -120,11 +120,11 @@ class Bebop_functions():
         self.yaw = 0
         self.bebopose = Vector3()
 
-        self.controlX = PID(0.25, 0, 1)  # PID(0.8, 0.001, 1.5)
+        self.controlX = PID(0.25, 0, 1)           # PID(0.8, 0.001, 1.5)
         self.controlY = PID(0.8, 0.001, 1.5)
-        self.controlZ = PID(0.12, 0.01, 0.25)  #PID(0.12, 0.01, 0.25)
+        self.controlZ = PID(0.8, 0.01, 0.25)      #PID(0.12, 0.01, 0.25)
 
-        self.controlYAW = PID(0.12, 0.01, 0.25)  #PID(0.12, 0.01, 0.25)
+        self.controlYAW = PID(0.12, 0.01, 0.25)   #PID(0.12, 0.01, 0.25)
 
         self.vel_lim = 0.3  # 2.0
         self.finished = False
@@ -183,7 +183,17 @@ class Bebop_functions():
             twist.linear.z = max(min(
                 self.controlZ.calculate_pid(delta_z), self.vel_lim), -self.vel_lim)
 
-            rospy.loginfo("rho: {:.2f},err = {:.2f}, {:.2f}, {:.2f}".format(rho, error_x, error_y, delta_z))
+            rospy.loginfo("rho: {:.2f},err = {:.2f}, {:.2f}, {:.2f}".format(
+                                                                            rho, error_x,
+                                                                            error_y, 
+                                                                            delta_z))
+
+            self.write_and_flush('{}, {}, {}'.format(
+                                                     self.bebopose.position.x,
+                                                     self.bebopose.position.y, 
+                                                     self.bebopose.position.z
+                                                     ))
+            self.write_and_flush('\n')
 
             self.cmdvel_publisher.publish(twist)
             if rho < 0.1 and not HOVER:
