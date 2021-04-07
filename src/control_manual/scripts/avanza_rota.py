@@ -135,7 +135,7 @@ class Bebop_functions():
         self.rate = rospy.Rate(10)
 
         # Escritura de los valores producidos (odometria, PID)
-        filename = 'datos_' + strftime('%d_%b_%Y_%H_%M_%S') + '.csv'
+        filename = 'datos_bebop2/datos_' + strftime('%d_%b_%Y_%H_%M_%S') + '.csv'
         self.logfile = open(filename, 'w')
         self.write_and_flush('PoseX, PoseY, PoseZ,')
         self.write_and_flush('errorX, errorY, errorZ, tiempo\n')
@@ -183,7 +183,7 @@ class Bebop_functions():
             twist.linear.z = max(min(
                 self.controlZ.calculate_pid(delta_z), self.vel_lim), -self.vel_lim)
 
-            rospy.loginfo("rho: {:.2f},err = {:.2f}, {:.2f}, {:.2f}".format(
+            rospy.loginfo("rho: {:.2f}, err = {:.2f}, {:.2f}, {:.2f}".format(
                                                                             rho, error_x,
                                                                             error_y, 
                                                                             delta_z))
@@ -218,7 +218,7 @@ class Bebop_functions():
             twist.angular.z = max(min(
                     self.controlZ.calculate_pid(delta_yaw), self.vel_lim), -self.vel_lim) # nuevo
 
-            rospy.loginfo("yaw: {:.2f}, sp: {:.2f}, e: {:.2f}".format(self.yaw, self.waypoint_yaw, delta_yaw))
+            # rospy.loginfo("yaw: {:.2f}, sp: {:.2f}, e: {:.2f}".format(self.yaw, self.waypoint_yaw, delta_yaw))
             
             self.cmdvel_publisher.publish(twist) 
 
@@ -232,26 +232,7 @@ class Bebop_functions():
                 rota = False  
             self.rate.sleep()         
 
-
-    # def goal_xyz(self):
-        
-    #             if len(WAYPOINTS) != 0:
-    #                 self.waypoint = WAYPOINTS.pop(0)
-    #                 print "new waypoint --> {}, {}".format(
-    #                     self.waypoint[0], self.waypoint[1])
-    #                 rospy.sleep(3)
-    #             else:
-    #                 self.finished = True
-
-    # def goal_yaw(self):
-    #     if len(WAYPOINTS_YAW) != 0:
-    #                 self.waypoint_yaw = WAYPOINTS_YAW.pop(0)
-    #                 print "new way rotation --> {}".format(
-    #                     self.waypoint[3])
-    #                 rospy.sleep(3)
-    #             else:
-    #                 self.finished_yaw = True
-                
+   
 
     def move_n_rotate(self):
 

@@ -13,7 +13,7 @@ $ sudo firmwared
 #### Se elimína la opsción de la cámara para optimizar recursos. Adicional se verifica el nombre del dispositivo de red con el comando 'iwconfig' y editarlo en el archivo  '/opt/parrot-sphinx/usr/share/sphinx/drones/bebop.drone' de ser necesario
 
 ```console
-$ sphinx /opt/parrot-sudo sphinx/usr/share/sphinx/drones/bebop2.drone::with_front_cam=false
+$ sudo sphinx /opt/parrot-sphinx/usr/share/sphinx/drones/bebop2.drone::with_front_cam=false
 ```
 ### Inicio del nodo bebop_autonomy
 
