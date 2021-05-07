@@ -9,10 +9,11 @@ import matplotlib.pyplot as plt
 from uuid import uuid4
 from math import atan2, sqrt, cos, sin, pi
 from std_msgs.msg import Empty
-from geometry_msgs.msg import Twist, TransformStamped, Vector3
+from geometry_msgs.msg import Twist, TransformStamped, Vector3, Vector3
 from bebop_msgs.msg import Ardrone3PilotingStateFlyingStateChanged
 from nav_msgs.msg import Odometry 
 import numpy as np
+
 
 import waypoints as wp
 
@@ -116,6 +117,11 @@ class Bebop_functions():
         # Nuevo se toma la pose a traves de la odometria del drone Bebop2
         self.bebopcoord_subscriber = rospy.Subscriber("/bebop/odom", Odometry, self.bebop_pose)
 
+
+        # Publisher pose para ser ploteada
+        self.bebopose_publisher = rospy.Publisher('bebopose',
+                                                Vector3, queue_size=10)
+
         self.state = None
         self.yaw = 0
         self.bebopose = Vector3()
@@ -195,6 +201,11 @@ class Bebop_functions():
                                                      ))
             self.write_and_flush('\n')
 
+            bebopose = Vector3(self.bebopose.position.x, self.bebopose.position.y, self.bebopose.position.z)
+            # bebopose(self.bebopose.position.x, self.bebopose.position.y, self.bebopose.position.z)
+
+            self.bebopose_publisher.publish(bebopose)
+
             self.cmdvel_publisher.publish(twist)
             if rho < 0.1 and not HOVER:
                 if len(WAYPOINTS) != 0:
@@ -241,8 +252,7 @@ class Bebop_functions():
         while not rospy.is_shutdown() and not self.finished and not self.finished_yaw:
             self.move()
             self.rotate()
-            
-        
+                 
         if self.finished and self.finished_yaw:
             self.cmdvel_publisher.publish(twist)
             self.land()
