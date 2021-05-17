@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from uuid import uuid4
 from math import atan2, sqrt, cos, sin, pi
 from std_msgs.msg import Empty
-from geometry_msgs.msg import Twist, TransformStamped, Vector3, Vector3
+from geometry_msgs.msg import Twist, TransformStamped, Vector3
 from bebop_msgs.msg import Ardrone3PilotingStateFlyingStateChanged
 from nav_msgs.msg import Odometry 
 import numpy as np
@@ -38,24 +38,24 @@ WAYPOINTS_YAW = [
                  ]
 
 
-x_plot = []
-y_plot = []
-z_plot = []
-time = []
+# x_plot = []
+# y_plot = []
+# z_plot = []
+# time = []
    
 
 # function to add to JSON 
-def write_json(new_data, filename='data.json'): 
-    with open(filename) as json_file: 
-        data = json.load(json_file) 
+# def write_json(new_data, filename='data.json'): 
+#     with open(filename) as json_file: 
+#         data = json.load(json_file) 
         
-        temp = data['PID'] 
+#         temp = data['PID'] 
    
-        # appending data to emp_details  
-        temp.append(new_data)
+#         # appending data to emp_details  
+#         temp.append(new_data)
 
-    with open(filename,'w') as f: 
-        json.dump(data, f, indent=4)
+#     with open(filename,'w') as f: 
+#         json.dump(data, f, indent=4)
 
 
 
@@ -224,7 +224,7 @@ class Bebop_functions():
             if self.yaw >= 3.10 and self.yaw <= 3.14:
                 delta_yaw = self.waypoint_yaw - (-3.1416)                 # nuevo
             else:
-                delta_yaw = self.waypoint_yaw -self.yaw
+                delta_yaw = self.waypoint_yaw - self.yaw
                 
             twist.angular.z = max(min(
                     self.controlZ.calculate_pid(delta_yaw), self.vel_lim), -self.vel_lim) # nuevo
