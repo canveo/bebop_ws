@@ -21,11 +21,11 @@ HOVER = False
 
 # WAYPOINTS = wp.WAYPOINTS
 WAYPOINTS = [
-    (0, 0, 1),
+    (0,   0, 1),
     (1.5, 0, 1),
     (1.5, 1.5, 1),
-    (0, 1.5, 1),
-    (0, 0 ,1)
+    (0,  1.5, 1),
+    (0,  0 ,1)
 ]
 
 # WAYPOINTS = [
@@ -94,7 +94,7 @@ class PID(object):
         dt = cur_time - self.prevTime
         self.prevTime = cur_time
         self.cumError += error * dt
-        pid = self.kp * error + self.kd * \
+        pid = self.kp * error + self.kd * 
             (error - self.prevError) / dt + \
             self.ki * self.cumError
         self.prevError = error
@@ -261,8 +261,7 @@ class Bebop_functions():
         # quat = msg.transform.rotation
         self.bebopose = msg.pose.pose
         quat = self.bebopose.orientation
-        (roll, pitch, self.yaw) = tf.transformations.euler_from_quaternion(
-            (quat.x, quat.y, quat.z, quat.w))
+        (roll, pitch, self.yaw) = tf.transformations.euler_from_quaternion(  (quat.x, quat.y, quat.z, quat.w))
         self.safety_check()
 
 
