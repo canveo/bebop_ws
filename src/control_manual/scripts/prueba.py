@@ -105,7 +105,7 @@ class Bebop_functions():
 
         x1[0] =  0   # Posicion inicial en el eje x en metros [m]
         y1[0] =  0  # Posicion inicial en el eje y en metros [m]
-        z1[0] =  0   # Posicion inicial en el eje z en metros [m]
+        z1[0] =  0.05   # Posicion inicial en el eje z en metros [m]
 
 
         phi = np.zeros(N+1)
@@ -130,7 +130,7 @@ class Bebop_functions():
         # hxd = 3
         # hyd = -2.5
         # hzd = 3
-        # psid = -90*(np.pi/180) * np.ones(N)
+        psid = -90*(np.pi/180) * np.ones(N)
         
         """curva"""
         # hxd = 2 * np.cos(0.1 * t)
@@ -139,12 +139,11 @@ class Bebop_functions():
 
         """cuadrado"""
         # div = 500
-        div = round(N/4)
-        pointX = [0,  0,  2, 2, 0]
-        pointY = [0, -2, -2, 0, 0]
+        div = round(N/2)
+        pointX = [0, 0]
+        pointY = [-2, -2]
         pointZ = 1*np.ones(len(pointX))
-        # pointYaw = [-1.5707963267948966, 0.0, 0.0, 1.5707963267948966, 3.141592653589793, 3.141592653589793]
-        pointYaw = np.radians([-89, -89, -89, -89, -89]) 
+        pointYaw = [-1.5707963267948966, 0.0]
 
 
         px = []
@@ -191,7 +190,7 @@ class Bebop_functions():
             hxe[k]  =  hxd[k] - self.bebopose.position.x
             hye[k]  =  hyd[k] - self.bebopose.position.y
             hze[k]  =  hzd[k] - self.bebopose.position.z
-            psie[k] =  hyawd[k] - self.yaw
+            psie[k] =  hyawd[k]  - self.yaw
 
             # print(self.bebopose.position.z)
             # print(self.yaw)
@@ -206,13 +205,13 @@ class Bebop_functions():
             #               [0              , 0              , 0  , 1]])
 
             J = np.array([[ np.cos(self.yaw), -np.sin(self.yaw), 0  , 0],
-                          [ np.sin(self.yaw),  np.cos(self.yaw), 0  , 0],
-                          [0                ,  0               , 1  , 0],
-                          [0                ,  0               , 0  , 1]])
+                          [ np.sin(self.yaw), np.cos(self.yaw) , 0  , 0],
+                          [0                , 0                , 1  , 0],
+                          [0                , 0                , 0  , 1]])
 
             # Parametros de control
 
-            K = 0.7 * np.array([[1,0,0,0],
+            K = 1 * np.array([[1,0,0,0],
                               [0,1,0,0],
                               [0,0,1,0],
                               [0,0,0,1]])
@@ -228,8 +227,6 @@ class Bebop_functions():
             ulRef[k] = qpRef[1][0]
             uzRef[k] = qpRef[2][0]
             wRef[k] = qpRef[3][0]
-
-            print("w: {} | e: {} | cmd: {}".format(self.yaw, psie[k],wRef[k]))
           
             # twist = Twist()
             # twist.linear.x = ufRef[k]
