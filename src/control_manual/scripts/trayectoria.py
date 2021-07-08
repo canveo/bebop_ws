@@ -33,7 +33,7 @@ class Bebop_functions():
 
         self.bebopcoord_subscriber = rospy.Subscriber("/bebop/odom", Odometry, self.bebop_pose)
 
-        # self.bebopvel_subscriber = rospy.Subscriber('bebop/states/ARDrone3/PilotingState/SpeedChanged', Ardrone3PilotingStateSpeedChanged)
+        self.bebopvel_subscriber = rospy.Subscriber('bebop/states/ARDrone3/PilotingState/SpeedChanged', Ardrone3PilotingStateSpeedChanged)
 
         self.state = None
         self.rate = rospy.Rate(10)
@@ -249,6 +249,14 @@ class Bebop_functions():
             elapse_time = (rospy.Time.now() - start_time).to_sec()
             rospy.sleep(ts-elapse_time)
             # rospy.sleep(0.1)
+
+    # def posicion_acumulada(self, speed):
+
+    #     velocidad_X = speed.speedX
+    #     velocidad_Y = speed.speedY
+
+    #     self.X_accum.append(posx)
+    #     self.Y_accum.append(posy)
 
 
 if __name__ == '__main__':
