@@ -5,6 +5,7 @@ from std_msgs.msg import Empty
 from geometry_msgs.msg import Twist, TransformStamped, Vector3
 from bebop_msgs.msg import Ardrone3PilotingStateSpeedChanged
 from bebop_msgs.msg import Ardrone3PilotingStateFlyingStateChanged
+from geometry_msgs.msg import PoseStamped # datos flujo optico
 
 from nav_msgs.msg import Odometry 
 import numpy as np
@@ -17,7 +18,7 @@ import math as mt
 class Bebop_functions():
     def __init__(self):
         # Bebop_control node creation
-        rospy.init_node('Bebop_control', anonymous=True)
+        rospy.init_node('Bebop_Control', anonymous=True)
 
         # Publisher para despegue
         self.takeoff_publisher = rospy.Publisher('/bebop/takeoff', Empty, queue_size=10)
@@ -41,10 +42,16 @@ class Bebop_functions():
         self.bebopvel_subscriber = rospy.Subscriber('bebop/states/ardrone3/PilotingState/SpeedChanged',
                                              Ardrone3PilotingStateSpeedChanged, self.velocidad_OF)
 
+
+
+        self.flujoOptico_pub = rospy.Publisher('/posicion_FO', PoseStamped, queue_size=10)
+
        
         """flujo optico, acumulacion de distancia recorrida"""
         self._posx = 0
         self._posy = 0
+        self.posx_abs = 0    #acumula distancia sin importar direccion
+        self.posy_abs = 0
         self.tiempo_previo = rospy.Time().now().to_sec()
 
 
@@ -210,10 +217,22 @@ class Bebop_functions():
             dt = tiempo_actual - self.tiempo_previo
             self._posx += self.velocidad_X * dt
             self._posy += self.velocidad_Y * dt
+            self.posx_abs += abs(self.velocidad_X * dt)
+            self.posy_abs += abs(self.velocidad_Y * dt)
             self.tiempo_previo = tiempo_actual
 
             print("posx: {:1.1f}, posy: {:1.1f}".format(self._posx,self._posy))
-            # print(self.velocidad_X)
+            
+            # Nodo con la posicin calculada a partir de flujo optico
+            posicion = PoseStamped()
+            posicion.header.frame_id = "_bebop_"
+            posicion.header.stamp = rospy.Time.now()
+            posicion.pose.position.x = self._posx
+            posicion.pose.position.y = self._posy
+            posicion.pose.position.z = self.yaw
+            posicion.pose.orientation.x = self.posx_abs
+            posicion.pose.orientation.y = self.posy_abs
+            self.flujoOptico_pub.publish(posicion)
 
 
         ###################### CONTROLADOR ######################
@@ -278,6 +297,7 @@ class Bebop_functions():
         self.velocidad_X = speed.speedX
         self.velocidad_Y = speed.speedY
 
+  
     
 
 if __name__ == '__main__':

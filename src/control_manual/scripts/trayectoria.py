@@ -1,15 +1,19 @@
 #!/usr/bin/env python
-import rospy
+import rospy, rosbag
 import tf
 from std_msgs.msg import Empty
 from geometry_msgs.msg import Twist, TransformStamped, Vector3
 from bebop_msgs.msg import Ardrone3PilotingStateFlyingStateChanged
+from bebop_msgs.msg import Ardrone3PilotingStateAltitudeChanged    # altura (sensor ultrasonido)
 from nav_msgs.msg import Odometry 
+from geometry_msgs.msg import PoseStamped  # Publisher errores
 import numpy as np
 
 from lyapunov import *
 import matplotlib.pyplot as plt
 import math as mt
+
+
 
 
 class Bebop_functions():
@@ -33,7 +37,14 @@ class Bebop_functions():
 
         self.bebopcoord_subscriber = rospy.Subscriber("/bebop/odom", Odometry, self.bebop_pose)
 
-        self.bebopvel_subscriber = rospy.Subscriber('bebop/states/ARDrone3/PilotingState/SpeedChanged', Ardrone3PilotingStateSpeedChanged)
+        # self.bebopvel_subscriber = rospy.Subscriber('bebop/states/ARDrone3/PilotingState/SpeedChanged', Ardrone3PilotingStateSpeedChanged)
+        
+        # Errores producidos en los desplazamientos XYZ
+        self.error_publisher = rospy.Publisher('/error_xyz', PoseStamped, queue_size=10)
+
+        # Subscriber: altura (sensor ultrasonido)
+        self.altura_subscriber = rospy.Subscriber('/bebop/states/ardrone3/PilotingState/AltitudeChanged',
+                                                         Ardrone3PilotingStateAltitudeChanged, self.update_altura)
 
         self.state = None
         self.rate = rospy.Rate(10)
@@ -64,6 +75,10 @@ class Bebop_functions():
     # /bebop/states... callback subscriber to read the state of the parrot
     def update_state(self, message):
         self.state = message.state
+
+    def update_altura(self, message):
+        self.altura = message.altitude
+
 
 
     def safety_check(self):
@@ -140,17 +155,20 @@ class Bebop_functions():
         """cuadrado"""
         # div = 500
         div = round(N/4)
-        pointX = [0,  0,  2, 2, 0]
-        pointY = [0, -2, -2, 0, 0]
+        pointX = [0, 2, 2, 0, 0]
+        pointY = [0, 0, 2, 2, 0]
         pointZ = 1*np.ones(len(pointX))
         # pointYaw = [-1.5707963267948966, 0.0, 0.0, 1.5707963267948966, 3.141592653589793, 3.141592653589793]
-        pointYaw = np.radians([-89, -89, -89, -89, -89]) 
+        pointYaw = np.radians([0, 0, 0, 0, 0]) 
 
 
         px = []
         py = []
         pz = []
         pyaw = []
+
+        # Grabar bag
+        bag = rosbag.Bag("bags/odom_con_v_1.bag", mode='w')
 
     
         for p in range(len(pointX)-1):
@@ -191,19 +209,29 @@ class Bebop_functions():
             hxe[k]  =  hxd[k] - self.bebopose.position.x
             hye[k]  =  hyd[k] - self.bebopose.position.y
             hze[k]  =  hzd[k] - self.bebopose.position.z
+            # hze[k]  =  hzd[k] - self.altura 
             psie[k] =  hyawd[k] - self.yaw
 
             # print(self.bebopose.position.z)
             # print(self.yaw)
 
+            """publisher errores producidos"""
+            """frosbag record /error_xyz /bebop/odom """
+             # Nodo con errores producidos
+            posicion = PoseStamped()
+            posicion.header.frame_id = "_bebop_error"
+            posicion.header.stamp = rospy.Time.now()
+            posicion.pose.position.x = hxe[k]
+            posicion.pose.position.y = hye[k]
+            posicion.pose.position.z = hze[k]
+            self.error_publisher.publish(posicion)
+
+            # rosbag guardar pose
+            bag.write('pose', posicion)
+
+
             he = np.array([[hxe[k]],[hye[k]],[hze[k]],[psie[k]]]) # vector de errores (4x1)
 
-            # Matriz Jacobiana
-
-            # J = np.array([[ np.cos(psi[k]), -np.sin(psi[k]), 0  , 0],
-            #               [ np.sin(psi[k]), np.cos(psi[k]) , 0  , 0],
-            #               [0              , 0              , 1  , 0],
-            #               [0              , 0              , 0  , 1]])
 
             J = np.array([[ np.cos(self.yaw), -np.sin(self.yaw), 0  , 0],
                           [ np.sin(self.yaw),  np.cos(self.yaw), 0  , 0],
@@ -212,7 +240,7 @@ class Bebop_functions():
 
             # Parametros de control
 
-            K = 0.7 * np.array([[1,0,0,0],
+            K = 0.8 * np.array([[1,0,0,0],
                               [0,1,0,0],
                               [0,0,1,0],
                               [0,0,0,1]])
@@ -248,15 +276,8 @@ class Bebop_functions():
 
             elapse_time = (rospy.Time.now() - start_time).to_sec()
             rospy.sleep(ts-elapse_time)
-            # rospy.sleep(0.1)
-
-    # def posicion_acumulada(self, speed):
-
-    #     velocidad_X = speed.speedX
-    #     velocidad_Y = speed.speedY
-
-    #     self.X_accum.append(posx)
-    #     self.Y_accum.append(posy)
+        bag.close()
+        
 
 
 if __name__ == '__main__':
