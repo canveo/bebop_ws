@@ -98,6 +98,16 @@ class Bebop_functions():
             (quat.x, quat.y, quat.z, quat.w))
         self.safety_check()
 
+    def angulo(self, waypoint, actual):
+        if waypoint > 0:
+            error = waypoint - actual
+        if waypoint < 0:
+            error = abs(waypoint) - (actual - np.radians(180))
+        return error
+    
+        
+        
+
 
     def lyapunov(self):
 
@@ -158,8 +168,8 @@ class Bebop_functions():
         pointX = [0, 2, 2, 0, 0]
         pointY = [0, 0, 2, 2, 0]
         pointZ = 1*np.ones(len(pointX))
-        # pointYaw = [-1.5707963267948966, 0.0, 0.0, 1.5707963267948966, 3.141592653589793, 3.141592653589793]
-        pointYaw = np.radians([0, 0, 0, 0, 0]) 
+        # pointYaw = np.radians([0, 0, 0, 0, 0]) 
+        pointYaw = np.radians([0.1, 90, 179, -90, -0.1])
 
 
         px = []
@@ -168,7 +178,7 @@ class Bebop_functions():
         pyaw = []
 
         # Grabar bag
-        bag = rosbag.Bag("bags/odom_con_v_1.bag", mode='w')
+        bag = rosbag.Bag("bags/odom_error_sin_v_test.bag", mode='w')
 
     
         for p in range(len(pointX)-1):
@@ -209,11 +219,11 @@ class Bebop_functions():
             hxe[k]  =  hxd[k] - self.bebopose.position.x
             hye[k]  =  hyd[k] - self.bebopose.position.y
             hze[k]  =  hzd[k] - self.bebopose.position.z
-            # hze[k]  =  hzd[k] - self.altura 
-            psie[k] =  hyawd[k] - self.yaw
+            # hze[k]  =  hzd[k] - self.altura  
+            # psie[k] = hyawd[k] - self.yaw
+            psie[k] = self.angulo(hyawd[k], self.yaw)
 
-            # print(self.bebopose.position.z)
-            # print(self.yaw)
+            print("sp: {} | actual: {} ".format(hyawd[k],self.yaw))
 
             """publisher errores producidos"""
             """frosbag record /error_xyz /bebop/odom """
@@ -227,8 +237,8 @@ class Bebop_functions():
             self.error_publisher.publish(posicion)
 
             # rosbag guardar pose
-            bag.write('pose', posicion)
-
+            bag.write('errores', posicion)
+            bag.write('pose', self.bebopose.position)
 
             he = np.array([[hxe[k]],[hye[k]],[hze[k]],[psie[k]]]) # vector de errores (4x1)
 
@@ -257,14 +267,8 @@ class Bebop_functions():
             uzRef[k] = qpRef[2][0]
             wRef[k] = qpRef[3][0]
 
-            print("w: {} | e: {} | cmd: {}".format(self.yaw, psie[k],wRef[k]))
+            # print("w: {} | e: {} | cmd: {}".format(self.yaw, psie[k],wRef[k]))
           
-            # twist = Twist()
-            # twist.linear.x = ufRef[k]
-            # twist.linear.y = ulRef[k]
-            # twist.linear.z = uzRef[k]
-            # twist.angular.z = wRef[k]
-            # self.cmdvel_publisher.publish(twist)
 
             twist = Twist()
             twist.linear.x = max(min(ufRef[k], 1), -1)
